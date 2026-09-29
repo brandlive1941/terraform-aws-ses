@@ -1,0 +1,51 @@
+{
+  "name": "terraform-aws-ses",
+  "version": "1.0.0",
+  "description": "Terraform module for Amazon SES v2 identities, MAIL FROM domains and configuration sets",
+  "private": true,
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"no tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandlive1941/terraform-aws-ses.git"
+  },
+  "keywords": [
+    "aws",
+    "ses",
+    "email",
+    "terraform"
+  ],
+  "author": "drew.mercer@brandlive.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandlive1941/terraform-aws-ses/issues"
+  },
+  "homepage": "https://github.com/brandlive1941/terraform-aws-ses#readme",
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "git-cz": "^4.9.0",
+    "semantic-release": "^23.0.2"
+  },
+  "dependencies": {
+    "commitizen": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
+  }
+}

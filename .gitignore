@@ -1,0 +1,10 @@
+**/.terraform/*
+*.tfstate**
+.terraform.lock.hcl
+crash.log
+*.tfplan
+
+node_modules/
+
+# macOS
+.DS_Store
